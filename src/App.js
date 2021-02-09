@@ -1,12 +1,12 @@
 import './App.css';
 import CardDeck from './components/CardDeck';
+import DeckBoard from './components/DeckBoard';
 
 
 function App() {
   return (
     <div className="App">
-      <CardDeck card='A' suit='d' />
-      <CardDeck card='T' suit='c' onClick />
+      <DeckBoard />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
