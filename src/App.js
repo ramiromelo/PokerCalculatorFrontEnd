@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import CardDeck from './components/CardDeck';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <CardDeck card='A' suit='d' />
+      <CardDeck card='T' suit='c' onClick />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +20,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
