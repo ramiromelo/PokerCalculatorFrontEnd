@@ -9,12 +9,27 @@ class CardDeck extends Component {
        }
    };
 
-   formatCard() {
+   cardBackground() {
+      switch(this.props.suit) {
+         case 'd':
+            return '#44bffc'
+         case 'h':
+            return '#fc4444'
+         case 's':
+            return '#545454'
+         case 'c':
+            return '#5effa4'
+         default:
+            return '#545454'
+      }
+   }
+
+   cardFontColor() {
       switch(this.props.suit) {
          case 'd':
             return 'blue'
          case 'h':
-            return 'red'
+            return '#b00000'
          case 's':
             return 'black'
          case 'c':
@@ -42,24 +57,33 @@ class CardDeck extends Component {
    
    render() { 
 
-      const cardStyle = {
-         backgroundColor: 'white',
-         height: '50px',
-         width: '30px',
-         textAlign: 'center',
-         verticalAlign: 'middle',
-         border: '1px solid black',
-         borderRadius: '6px',
-         margin: '2px',
+      const cardText = {
+         backgroundColor: this.cardBackground(),
+         height: '100%',
+         border: '0px',
+         borderRadius: '7px',
+         margin: '1px',
          userSelect: 'none',
-         color: this.formatCard(),
-         fontWeight: 'bold'
       };
 
+
       return ( 
-         <div>
-            <div style={cardStyle}>{this.props.card}<br />{this.formatSuit()}</div>
-         </div>
+         
+            
+               <div style={cardText}>
+                  <div style={{
+                     fontSize: '10px',
+                     color: this.cardFontColor(),
+                     fontWeight: 'bold',
+                  }}>{this.props.card}</div>
+                  <div style={{
+                     fontSize: '15px',
+                     color: this.cardFontColor(),
+                     fontWeight: 'bold'
+                  }}>{this.formatSuit()}</div>
+               </div>
+            
+         
       );
    }
 }
