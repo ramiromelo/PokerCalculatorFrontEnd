@@ -5,10 +5,13 @@ class DeckBoard extends Component {
    render() { 
       return ( 
          <div style={{
-            height: '60vh',
-            display: 'flex',
+            // height: '55vh',
+            // display: 'flex',
          }} className="container">
-            
+            <div style={{
+               height: '30px',
+            // display: 'flex',
+         }}></div>
             <table style={{ width: '100%', height: '100%'}}>
                <tr>
                   <td><CardDeck card='A' suit='d' /></td>

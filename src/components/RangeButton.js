@@ -36,7 +36,8 @@ class RangeButton extends Component {
          zIndex: 1,
          position: 'relative',
          top: 0,
-         left: 0
+         left: 0,
+         color: 'black'
       };
 
       return ( 

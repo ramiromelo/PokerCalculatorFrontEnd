@@ -7,10 +7,12 @@ class RangeBoard extends Component {
       return ( 
 
          <div style={{
-            height: '35vh',
-            display: 'flex',
+            // height: '30vh',
+            // display: 'flex',
+            color: 'white',
          }} className="container">
             <div nameClass="row">
+               <div>PLAYER SELECTED</div>
                <table>
                   <tr>
                      <td><RangeButton buttonName="AA" type="p" /></td>

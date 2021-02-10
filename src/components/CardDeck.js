@@ -77,7 +77,7 @@ class CardDeck extends Component {
                      fontWeight: 'bold',
                   }}>{this.props.card}</div>
                   <div style={{
-                     fontSize: '15px',
+                     fontSize: '10px',
                      color: this.cardFontColor(),
                      fontWeight: 'bold'
                   }}>{this.formatSuit()}</div>
