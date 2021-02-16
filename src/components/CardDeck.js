@@ -70,18 +70,14 @@ class CardDeck extends Component {
       return ( 
          
             
-               <div style={cardText}>
-                  <div style={{
-                     fontSize: '10px',
-                     color: this.cardFontColor(),
-                     fontWeight: 'bold',
-                  }}>{this.props.card}</div>
-                  <div style={{
-                     fontSize: '10px',
-                     color: this.cardFontColor(),
-                     fontWeight: 'bold'
-                  }}>{this.formatSuit()}</div>
-               </div>
+         <div style={cardText}>
+            <div style={{
+               fontSize: '14px',
+               color: this.cardFontColor(),
+               fontWeight: 'bold',
+            }}>{this.props.card}{this.formatSuit()}</div>
+            
+         </div>
             
          
       );

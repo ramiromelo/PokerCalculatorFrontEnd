@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 import RangeButton from './RangeButton';
+import { useSelector } from 'react-redux';
 
-class RangeBoard extends Component {
-   state = {  }
-   render() { 
-      return ( 
 
-         <div style={{
-            // height: '30vh',
-            // display: 'flex',
-            color: 'white',
-         }} className="container">
-            <div nameClass="row">
-               <div>PLAYER SELECTED</div>
-               <table>
+
+function RangeBoard() {
+
+   const playerSelectedPanel = useSelector(state => state.playerSelected);
+
+   return ( 
+
+      <div style={{
+         // height: '30vh',
+         // display: 'flex',
+         color: 'white',
+      }} className="container">
+         <div nameClass="row">
+            <div>PLAYER SELECTED: {playerSelectedPanel}</div>
+            <table>
+               <tbody>
                   <tr>
                      <td><RangeButton buttonName="AA" type="p" /></td>
                      <td><RangeButton buttonName="AK" type="s" /></td>
@@ -209,13 +214,13 @@ class RangeBoard extends Component {
                      <td><RangeButton buttonName="32" type="o" /></td>
                      <td><RangeButton buttonName="22" type="p" /></td>
                   </tr>
-               </table>
+               </tbody>
+            </table>
 
-            </div>
          </div>
+      </div>
 
-      );
-   }
+   );
 }
  
 export default RangeBoard;

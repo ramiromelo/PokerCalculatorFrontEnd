@@ -1,18 +1,34 @@
 import React, { Component } from 'react';
 import VillainRangeButton from './VillainRangeButton';
-import VillainPanel from './VillainRangeButton';
 
-class VillainRange extends Component {
-   constructor(props) {
-      super(props);
-      this.state = {  }
-   }
-   render() { 
-      return ( 
-         <div>
-            <table style={{
-               margin: 'auto'
-            }}>
+
+// function VillainPanel() {
+//    const playerSelectedPanel = useSelector(state => state.playerSelected);
+//    return (
+//       <div style={{
+//          color: 'white'
+//       }} className="container">
+//          <div className="justify-content-center">
+//          PLAYER: {playerSelectedPanel}
+//          <VillainRange />
+         
+//          <button>FOLD</button>
+//          </div>
+//       </div>
+//    );
+// }
+ 
+// export default VillainPanel;
+
+
+function VillainRange() {
+   // const playerSelectedPanel = useSelector(state => state.playerSelected);
+   return ( 
+      <div>
+         <table style={{
+            margin: 'auto'
+         }}>
+            <tbody>
                <tr>
                   <td><VillainRangeButton range='AA' selected='true' /></td>
                   <td><VillainRangeButton range='AKs' selected='true' /></td>
@@ -208,11 +224,10 @@ class VillainRange extends Component {
                   <td><VillainRangeButton range='A3s' selected='false' /></td>
                   <td><VillainRangeButton range='A2s' selected='false' /></td>
                </tr>
-               
-            </table>
-         </div>
-       );
-   }
+            </tbody>
+         </table>
+      </div>
+   );
 }
  
 export default VillainRange;

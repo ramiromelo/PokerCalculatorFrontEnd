@@ -3,8 +3,8 @@ import DeckBoard from './components/DeckBoard';
 import RangeBoard from './components/RangeBoard';
 import VillainPanel from './components/VillainPanel';
 
-
 document.body.style = 'background: black;';
+
 
 function App() {
   return (
