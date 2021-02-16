@@ -1,28 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import VillainRangeButton from './VillainRangeButton';
 
 
-// function VillainPanel() {
-//    const playerSelectedPanel = useSelector(state => state.playerSelected);
-//    return (
-//       <div style={{
-//          color: 'white'
-//       }} className="container">
-//          <div className="justify-content-center">
-//          PLAYER: {playerSelectedPanel}
-//          <VillainRange />
-         
-//          <button>FOLD</button>
-//          </div>
-//       </div>
-//    );
-// }
- 
-// export default VillainPanel;
-
-
 function VillainRange() {
-   // const playerSelectedPanel = useSelector(state => state.playerSelected);
+
    return ( 
       <div>
          <table style={{

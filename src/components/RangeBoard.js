@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import RangeButton from './RangeButton';
 import { useSelector } from 'react-redux';
 
