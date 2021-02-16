@@ -1,7 +1,8 @@
 import React from 'react';
 import VillainRange from './VillainRange';
 import { useDispatch } from 'react-redux';
-import { selectPlayer1, selectPlayer2, selectPlayer3,selectPlayer4, selectPlayer5 } from '../actions/selectPlayer';
+import { selectPlayer1, selectPlayer2, selectPlayer3,selectPlayer4, selectPlayer5 } from '../actions/selectPlayerAction';
+// import { player1FoldReducer } from '../actions/selectPlayerAction'
 
 
 // const dispatch = useDispatch();
@@ -9,31 +10,8 @@ import { selectPlayer1, selectPlayer2, selectPlayer3,selectPlayer4, selectPlayer
    
 
 const VillainPanel = (props) => {
-   const  dispatch = useDispatch();
-
-   let a;
-   let b;
-   switch (a) {
-      case 1:
-         b = selectPlayer2();
-         break;
-      case 2:
-         b = selectPlayer2();
-         break;
-      case 3:
-         b = selectPlayer3();
-         break;
-      case 4:
-         b = selectPlayer4();
-         break;
-      case 5:
-         b = selectPlayer5();
-         break;
-      default:
-         b = selectPlayer1();
-   }
    
-
+   const  dispatch = useDispatch();
 
    return ( 
       <div style={{
@@ -63,7 +41,7 @@ const VillainPanel = (props) => {
                   dispatch(selectPlayer1());
             }
          }}>SELECT</button>
-         <button>FOLD</button>
+         <button onClick={() => {dispatch(player1FoldReducer)}}>FOLD</button>
          </div>
       </div>      
    );
