@@ -2,7 +2,18 @@ import React from 'react';
 import RangeButton from './RangeButton';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { pl1range1A } from '../actions/rangesActions';
+import { pl1range1A,
+   pl1range2A,
+   pl1range3A,
+   pl1range4A,
+   pl1range5A,
+   pl1range6A,
+   pl1range7A,
+   pl1range8A,
+   pl1range9A,
+   pl1range10A,
+
+} from '../actions/rangesActions';
 
 function RangeBoard() {
 
@@ -25,29 +36,25 @@ function RangeBoard() {
                      <td><div onClick={() => {
                         switch (playerSelectedPanel) {
                            case 1:
-                              console.log('teste');
                               dispatch(pl1range1A());
                               break;
                            case "2":
-                              dispatch(pl1range1A());
+                              //dispatch(pl2range1A());
                               break;
                            case "3":
-                              dispatch(pl1range1A());
+                              //dispatch(pl3range1A());
                               break;
                            case "4":
-                              dispatch(pl1range1A());
+                              //dispatch(pl4range1A());
                               break;
                            case "5":
-                              dispatch(pl1range1A());
+                              //dispatch(pl5range1A());
                               break;
                            default:
                         }
                      }}><RangeButton  buttonName="AA" type="p" /></div></td>
-                     <td><div onClick={() => {
-                        
-                        }
-                     }><RangeButton onClick={ () => dispatch(pl1range1A())} buttonName="AK" type="s" /></div></td>
-                     <td><RangeButton onClick={ () => console.log('teste2')}buttonName="AQ" type="s" /></td>
+                     <td><RangeButton buttonName="AK" type="s" /></td>
+                     <td><RangeButton buttonName="AQ" type="s" /></td>
                      <td><RangeButton buttonName="AJ" type="s" /></td>
                      <td><RangeButton buttonName="AT" type="s" /></td>
                      <td><RangeButton buttonName="A9" type="s" /></td>
