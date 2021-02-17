@@ -42,7 +42,7 @@ class RangeButton extends Component {
 
       return ( 
          
-         <div style={ rangeButtonStyle }>
+         <div onClick={() => console.log('click')} style={ rangeButtonStyle }>
             <div style={{
                position: 'absolute', left: '50%', top: '50%',
                transform: 'translate(-50%, -50%)',

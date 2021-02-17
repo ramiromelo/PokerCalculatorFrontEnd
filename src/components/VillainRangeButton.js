@@ -9,10 +9,14 @@ class VillainRangeButton extends Component {
    }
 
    buttonSelected(){
-      if(this.props.selected === 'true') {
-         return 'orange'
+      if(this.props.fold === 'true') {
+         return 'gray';
       } else {
-         return 'white'
+         if(this.props.selected === true) {
+            return 'orange'
+         } else {
+            return 'white'
+         }
       }          
    }
    

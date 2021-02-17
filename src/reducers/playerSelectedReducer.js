@@ -6,8 +6,6 @@ const playerSelected = (state = 1, action) => {
          return 2;
       case 'SELECT_PLAYER_3':
          return 3;
-      case 'SELECT_PLAYER_3':
-         return 4;
       case 'SELECT_PLAYER_4':
          return 4;
       case 'SELECT_PLAYER_5':

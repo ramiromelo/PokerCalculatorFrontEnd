@@ -1,8 +1,17 @@
 import React from 'react';
 import VillainRangeButton from './VillainRangeButton';
+import { useSelector } from 'react-redux';
 
+const VillainRange = (props) => {
 
-function VillainRange() {
+   const playerSelFold = useSelector(state => state.playerFold);
+   const villain = Number(props.player);
+
+   console.log(useSelector(state => state.ranges[1][1]))
+   console.log(villain)
+   // let one = toString(1);
+   // console.log(one)
+   // console.log(typeof(one));
 
    return ( 
       <div>
@@ -11,199 +20,199 @@ function VillainRange() {
          }}>
             <tbody>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='true' /></td>
-                  <td><VillainRangeButton range='AKs' selected='true' /></td>
-                  <td><VillainRangeButton range='AQs' selected='true' /></td>
-                  <td><VillainRangeButton range='AJs' selected='true' /></td>
-                  <td><VillainRangeButton range='ATs' selected='true' /></td>
-                  <td><VillainRangeButton range='A9s' selected='true' /></td>
-                  <td><VillainRangeButton range='A8s' selected='true' /></td>
-                  <td><VillainRangeButton range='A7s' selected='true' /></td>
-                  <td><VillainRangeButton range='A6s' selected='true' /></td>
-                  <td><VillainRangeButton range='A5s' selected='true' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton selected={useSelector(state => state.ranges[1][1])} range='AA' player={props.player} fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='true' /></td>
-                  <td><VillainRangeButton range='AKs' selected='true' /></td>
-                  <td><VillainRangeButton range='AQs' selected='true' /></td>
-                  <td><VillainRangeButton range='AJs' selected='true' /></td>
-                  <td><VillainRangeButton range='ATs' selected='true' /></td>
-                  <td><VillainRangeButton range='A9s' selected='true' /></td>
-                  <td><VillainRangeButton range='A8s' selected='true' /></td>
-                  <td><VillainRangeButton range='A7s' selected='true' /></td>
-                  <td><VillainRangeButton range='A6s' selected='true' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='true' /></td>
-                  <td><VillainRangeButton range='AKs' selected='true' /></td>
-                  <td><VillainRangeButton range='AQs' selected='true' /></td>
-                  <td><VillainRangeButton range='AJs' selected='true' /></td>
-                  <td><VillainRangeButton range='ATs' selected='true' /></td>
-                  <td><VillainRangeButton range='A9s' selected='true' /></td>
-                  <td><VillainRangeButton range='A8s' selected='true' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='true' /></td>
-                  <td><VillainRangeButton range='AKs' selected='true' /></td>
-                  <td><VillainRangeButton range='AQs' selected='true' /></td>
-                  <td><VillainRangeButton range='AJs' selected='true' /></td>
-                  <td><VillainRangeButton range='ATs' selected='true' /></td>
-                  <td><VillainRangeButton range='A9s' selected='true' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='true' /></td>
-                  <td><VillainRangeButton range='AKs' selected='true' /></td>
-                  <td><VillainRangeButton range='AQs' selected='true' /></td>
-                  <td><VillainRangeButton range='AJs' selected='true' /></td>
-                  <td><VillainRangeButton range='ATs' selected='true' /></td>
-                  <td><VillainRangeButton range='A9s' selected='false' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='true' /></td>
-                  <td><VillainRangeButton range='AKs' selected='true' /></td>
-                  <td><VillainRangeButton range='AQs' selected='true' /></td>
-                  <td><VillainRangeButton range='AJs' selected='false' /></td>
-                  <td><VillainRangeButton range='ATs' selected='false' /></td>
-                  <td><VillainRangeButton range='A9s' selected='false' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='true' /></td>
-                  <td><VillainRangeButton range='AKs' selected='false' /></td>
-                  <td><VillainRangeButton range='AQs' selected='false' /></td>
-                  <td><VillainRangeButton range='AJs' selected='false' /></td>
-                  <td><VillainRangeButton range='ATs' selected='false' /></td>
-                  <td><VillainRangeButton range='A9s' selected='false' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='false' /></td>
-                  <td><VillainRangeButton range='AKs' selected='false' /></td>
-                  <td><VillainRangeButton range='AQs' selected='false' /></td>
-                  <td><VillainRangeButton range='AJs' selected='false' /></td>
-                  <td><VillainRangeButton range='ATs' selected='false' /></td>
-                  <td><VillainRangeButton range='A9s' selected='false' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='false' /></td>
-                  <td><VillainRangeButton range='AKs' selected='false' /></td>
-                  <td><VillainRangeButton range='AQs' selected='false' /></td>
-                  <td><VillainRangeButton range='AJs' selected='false' /></td>
-                  <td><VillainRangeButton range='ATs' selected='false' /></td>
-                  <td><VillainRangeButton range='A9s' selected='false' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='false' /></td>
-                  <td><VillainRangeButton range='AKs' selected='false' /></td>
-                  <td><VillainRangeButton range='AQs' selected='false' /></td>
-                  <td><VillainRangeButton range='AJs' selected='false' /></td>
-                  <td><VillainRangeButton range='ATs' selected='false' /></td>
-                  <td><VillainRangeButton range='A9s' selected='false' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='false' /></td>
-                  <td><VillainRangeButton range='AKs' selected='false' /></td>
-                  <td><VillainRangeButton range='AQs' selected='false' /></td>
-                  <td><VillainRangeButton range='AJs' selected='false' /></td>
-                  <td><VillainRangeButton range='ATs' selected='false' /></td>
-                  <td><VillainRangeButton range='A9s' selected='false' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='false' /></td>
-                  <td><VillainRangeButton range='AKs' selected='false' /></td>
-                  <td><VillainRangeButton range='AQs' selected='false' /></td>
-                  <td><VillainRangeButton range='AJs' selected='false' /></td>
-                  <td><VillainRangeButton range='ATs' selected='false' /></td>
-                  <td><VillainRangeButton range='A9s' selected='false' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
                <tr>
-                  <td><VillainRangeButton range='AA' selected='false' /></td>
-                  <td><VillainRangeButton range='AKs' selected='false' /></td>
-                  <td><VillainRangeButton range='AQs' selected='false' /></td>
-                  <td><VillainRangeButton range='AJs' selected='false' /></td>
-                  <td><VillainRangeButton range='ATs' selected='false' /></td>
-                  <td><VillainRangeButton range='A9s' selected='false' /></td>
-                  <td><VillainRangeButton range='A8s' selected='false' /></td>
-                  <td><VillainRangeButton range='A7s' selected='false' /></td>
-                  <td><VillainRangeButton range='A6s' selected='false' /></td>
-                  <td><VillainRangeButton range='A5s' selected='false' /></td>
-                  <td><VillainRangeButton range='A4s' selected='false' /></td>
-                  <td><VillainRangeButton range='A3s' selected='false' /></td>
-                  <td><VillainRangeButton range='A2s' selected='false' /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='false' fold={playerSelFold[props.player].toString()} /></td>
                </tr>
             </tbody>
          </table>

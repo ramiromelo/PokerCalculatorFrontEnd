@@ -15,6 +15,12 @@ function App() {
         <div className="row">
           
           <div className="col-8">
+          <div className="row">
+              <div className="col-12 d-flex">
+                <button>NEW HAND</button>
+                <button>RESET</button>
+              </div>
+            </div>
             <div className="row">
               <div className="col-12 d-flex">
                 <VillainPanel player='3' />
@@ -47,6 +53,9 @@ function App() {
             </div>
            
           </div>
+        </div>
+        <div className="row">
+          Copyright - Ramiro Melo
         </div>
       </div>
     </div>
