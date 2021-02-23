@@ -20,7 +20,7 @@ const VillainRange = (props) => {
          }}>
             <tbody>
                <tr>
-                  <td><VillainRangeButton selected={useSelector(state => state.ranges[1][1])} range='AA' player={props.player} fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton selected={useSelector(state => state.ranges[villain][1])} range='AA' player={props.player} fold={playerSelFold[props.player].toString()} /></td>
                   <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                   <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                   <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
@@ -36,7 +36,7 @@ const VillainRange = (props) => {
                </tr>
                <tr>
                   <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
-                  <td><VillainRangeButton selected={useSelector(state => state.ranges[1][2])} range='KK' player={props.player} fold={playerSelFold[props.player].toString()} /></td>
+                  <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                   <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                   <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
                   <td><VillainRangeButton range='AA' player={props.player} selected='true' fold={playerSelFold[props.player].toString()} /></td>
